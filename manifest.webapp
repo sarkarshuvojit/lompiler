@@ -1,0 +1,29 @@
+{
+  "name": "Lompiler",
+  "description": "The Light Compiler",
+    "version" : "2",
+  "launch_path": "/index.html",
+  "icons": {    
+    "128": "/icons/icon128x128.png"
+  },
+  "type": "privileged",
+  "permissions": {
+    "desktop-notification":{
+      "description":"Used to notify when phone is not connected to a network"
+    },
+    "systemXHR":{
+      "description":"Used to fetch compiled code from remote REST API"
+    }
+  },
+    "developer": {
+    "name": "Shuvojit Sarkar",
+    "url": "http://www.facebook.com/sarkarshuvojit"
+  },
+  "default_locale": "en",    
+      "installs_allowed_from": ["*"],        
+          "precompile": [
+            "js/jq.js",
+            "js/menu.js",
+            "js/compile.js"
+          ]
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <link rel="stylesheet" href="css/compiler.css" />      
+  </head> 
+  
+  <body class="pushmenu-push">    
+    <nav class="pushmenu pushmenu-left">      
+      <h3>Languages</h3>
+      <a href="#" id="select-c">C</a>
+      <a href="#" id="select-cpp">C++</a>
+      <a href="#" id="select-java">Java</a>
+      <h3>Options</h3>
+      <a href="#" id="open-file">Open File</a>
+      <h3>About</h3>
+      <a href="/dev.html">About this app!</a>
+    </nav>
+
+  <div class="container">
+         <div class="main">
+            <div class="heading">
+              <div id="nav_list"></div>
+              <div class="pageTitle" id="heading">Java Compiler</div>
+            </div>
+      <section class="content">
+        <!--<h1 id="heading">Java Compiler</h1>          -->
+        <textarea id="code" wrap="off">
+/*classname should always be Solution*/
+class Solution {
+  public static void main(String[] args) { 
+    System.out.println("Hello, World");
+  }
+}</textarea>
+        <textarea id="input" placeholder="STDIN"></textarea>
+        <pre id="terminal">
+user@firefox-phone:~$</pre>
+        <div id="button">Compile and Run</div>        
+      </section><!-- End Content -->
+    </div><!-- End Main -->
+  </div><!-- End Container --> 
+    <div id="loader"></div>
+    <div id="select-shit" >
+      <h1 style="color:#00A287;">Select File</h1>
+    </div>
+    <script src="js/jq.js"></script>    
+    <script src="js/compile.js"></script>    
+    <script src="js/menu.js"></script>
+  </body>
+</html>
